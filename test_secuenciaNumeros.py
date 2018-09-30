@@ -21,3 +21,6 @@ class TestSecuenciaNumeros(TestCase):
 
     def test_secuencia(self):
         self.assertEqual(SecuenciaNumeros().secuencia(''), str(SecuenciaNumeros().retornarlongitud(''))+','+str(SecuenciaNumeros().minimo('')), 'cadena vacia resultados')
+
+    def test_maximo(self):
+        self.assertEqual(SecuenciaNumeros().maximo(''), 'vacio', 'cadena vacia maximo')

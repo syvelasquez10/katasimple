@@ -24,3 +24,6 @@ class SecuenciaNumeros:
                     min = int(x)
 
             return min
+
+    def maximo(self, cadena):
+        return -1
