@@ -15,7 +15,6 @@ class SecuenciaNumeros:
             return 'vacio'
         elif ',' not in cadena:
             return int(cadena)
-
         else:
             cadena_numeros = cadena.split(',')
             min = int(cadena_numeros[0])
@@ -28,4 +27,6 @@ class SecuenciaNumeros:
     def maximo(self, cadena):
         if cadena == '':
             return 'vacio'
+        elif ',' not in cadena:
+            return int(cadena)
         return -1
