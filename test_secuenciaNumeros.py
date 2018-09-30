@@ -31,3 +31,4 @@ class TestSecuenciaNumeros(TestCase):
     def test_promedio(self):
         self.assertEqual(SecuenciaNumeros().promedio(''), 'vacio', 'cadena vacia promedio')
         self.assertEqual(SecuenciaNumeros().promedio('12'), 12, 'cadena de un elemento promedio')
+        self.assertEqual(SecuenciaNumeros().promedio('12, 6'), 9, 'cadena de dos elementos promedio')
