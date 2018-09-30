@@ -1,7 +1,7 @@
 class SecuenciaNumeros:
 
     def secuencia(self,cadena):
-        return str(self.retornarlongitud(cadena))+','+str(self.minimo(cadena))+','+str(self.maximo(cadena))
+        return str(self.retornarlongitud(cadena))+','+str(self.minimo(cadena))+','+str(self.maximo(cadena))+','+str(self.promedio(cadena))
 
     def retornarlongitud(self, cadena):
         if cadena == '':
@@ -35,4 +35,7 @@ class SecuenciaNumeros:
                 if int(x) > max:
                     max = int(x)
             return max
+        return -1
+
+    def promedio(self, cadena):
         return -1
