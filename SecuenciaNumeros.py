@@ -21,7 +21,6 @@ class SecuenciaNumeros:
             for x in cadena_numeros:
                 if int(x) < min:
                     min = int(x)
-
             return min
 
     def maximo(self, cadena):
@@ -31,8 +30,9 @@ class SecuenciaNumeros:
             return int(cadena)
         else:
             cadena_numeros = cadena.split(',')
-            if int(cadena_numeros[0]) > int(cadena_numeros[1]):
-                return int(cadena_numeros[0])
-            else:
-                return int(cadena_numeros[1])
+            max = int(cadena_numeros[0])
+            for x in cadena_numeros:
+                if int(x) > max:
+                    max = int(x)
+            return max
         return -1
