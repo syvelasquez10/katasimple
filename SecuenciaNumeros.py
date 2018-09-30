@@ -43,5 +43,7 @@ class SecuenciaNumeros:
             return int(cadena)
         else:
             cadena_numeros = cadena.split(',')
-            return (int(cadena_numeros[0])+int(cadena_numeros[1]))/2
-        return -1
+            promedio = 0
+            for x in cadena_numeros:
+                promedio = int(x) + int(promedio)
+            return promedio/len(cadena_numeros)
