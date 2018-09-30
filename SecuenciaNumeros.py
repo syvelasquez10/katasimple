@@ -15,11 +15,12 @@ class SecuenciaNumeros:
             return 'vacio'
         elif ',' not in cadena:
             return int(cadena)
-        elif cadena.count(',') == 1:
-            cadena_numeros = cadena.split(',')
 
-            if int(cadena_numeros[0]) < int(cadena_numeros[1]):
-                return int(cadena_numeros[0])
-            else:
-                return int(cadena_numeros[1])
-        return -1
+        else:
+            cadena_numeros = cadena.split(',')
+            min = int(cadena_numeros[0])
+            for x in cadena_numeros:
+                if int(x) < min:
+                    min = int(x)
+
+            return min
