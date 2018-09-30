@@ -20,7 +20,7 @@ class TestSecuenciaNumeros(TestCase):
         self.assertNotEqual(SecuenciaNumeros().minimo('12,5,4,2'), 5, 'cadena de n elementos no igual minmo')
 
     def test_secuencia(self):
-        self.assertEqual(SecuenciaNumeros().secuencia(''), str(SecuenciaNumeros().retornarlongitud(''))+','+str(SecuenciaNumeros().minimo('')), 'cadena vacia resultados')
+        self.assertEqual(SecuenciaNumeros().secuencia(''), str(SecuenciaNumeros().retornarlongitud(''))+','+str(SecuenciaNumeros().minimo(''))+','+str(SecuenciaNumeros().maximo('')), 'cadena vacia resultados')
 
     def test_maximo(self):
         self.assertEqual(SecuenciaNumeros().maximo(''), 'vacio', 'cadena vacia maximo')

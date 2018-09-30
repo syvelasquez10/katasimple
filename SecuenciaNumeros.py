@@ -1,7 +1,7 @@
 class SecuenciaNumeros:
 
     def secuencia(self,cadena):
-        return str(self.retornarlongitud(cadena))+','+str(self.minimo(cadena))
+        return str(self.retornarlongitud(cadena))+','+str(self.minimo(cadena))+','+str(self.maximo(cadena))
 
     def retornarlongitud(self, cadena):
         if cadena == '':
@@ -26,4 +26,6 @@ class SecuenciaNumeros:
             return min
 
     def maximo(self, cadena):
+        if cadena == '':
+            return 'vacio'
         return -1
