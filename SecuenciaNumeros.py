@@ -39,4 +39,6 @@ class SecuenciaNumeros:
     def promedio(self, cadena):
         if cadena == '':
             return 'vacio'
+        elif ',' not in cadena:
+            return int(cadena)
         return -1
