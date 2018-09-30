@@ -29,4 +29,10 @@ class SecuenciaNumeros:
             return 'vacio'
         elif ',' not in cadena:
             return int(cadena)
+        else:
+            cadena_numeros = cadena.split(',')
+            if int(cadena_numeros[0]) > int(cadena_numeros[1]):
+                return int(cadena_numeros[0])
+            else:
+                return int(cadena_numeros[1])
         return -1
