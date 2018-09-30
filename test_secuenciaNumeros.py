@@ -26,3 +26,4 @@ class TestSecuenciaNumeros(TestCase):
         self.assertEqual(SecuenciaNumeros().maximo(''), 'vacio', 'cadena vacia maximo')
         self.assertEqual(SecuenciaNumeros().maximo('12'), 12, 'cadena de un elemento maximo')
         self.assertEqual(SecuenciaNumeros().maximo('12, 5'), 12, 'cadena de dos elemento maximo')
+        self.assertEqual(SecuenciaNumeros().maximo('1, 5, 6, 9'), 9, 'cadena de n elementos maximo')
