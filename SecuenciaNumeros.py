@@ -35,7 +35,8 @@ class SecuenciaNumeros:
                 if int(x) > max:
                     max = int(x)
             return max
-        return -1
 
     def promedio(self, cadena):
+        if cadena == '':
+            return 'vacio'
         return -1
