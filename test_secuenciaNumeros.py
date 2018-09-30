@@ -14,6 +14,7 @@ class TestSecuenciaNumeros(TestCase):
 
     def test_minimo(self):
         self.assertEqual(SecuenciaNumeros().minimo(''), 'vacio', 'cadena vacia minimo')
+        self.assertEqual(SecuenciaNumeros().minimo('12.5'), 12.5, 'cadena de un elemento minimo')
 
 
     def test_secuencia(self):
